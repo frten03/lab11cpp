@@ -8,8 +8,6 @@
 using namespace std;
 
 
-
-
 int main(){
     cout << "Press Enter 3 times to reveal your future.";
     cin.get();
@@ -19,7 +17,7 @@ int main(){
     cout << "You will get " ;
 
     srand(time(0)) ;
-    int g = rand()%7 ;
+    int g = rand()%9 ;
     if(g==0) cout << "A" ;
     else if(g==1) cout << "B+" ;
     else if(g==2) cout << "B" ;
@@ -27,7 +25,8 @@ int main(){
     else if(g==4) cout << "C" ;
     else if(g==5) cout << "D+" ;
     else if(g==6) cout << "D" ;
-    else cout << "F" ;
+    else if(g==7) cout << "F" ;
+    else if(g==8) cout << "W" ;
 
     cout <<  " in this 261102." ;
 
